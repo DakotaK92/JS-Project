@@ -36,6 +36,10 @@ body {
   margin: 10px;
 }
 
+.navbar img {
+  padding: 0px 10px;
+}
+
 .navbar ul {
   padding: 5px 20px;
   font-weight: 600;
