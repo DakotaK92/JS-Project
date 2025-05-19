@@ -1,23 +1,16 @@
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("myDropdown1").classList.toggle("show");
+function toggleFeature(event) {
+  document.getElementById("featureDropdown").classList.toggle("show");
+  document.getElementById ("companyDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.drop-btn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
+function toggleCompany(event) {
+  document.getElementById("companyDropdown").classList.toggle("show");
+  document.getElementById("featureDropdown").classList.toggle("show");
 }
 
 window.onclick = function(e) {
-  if (!e.target.matches('.drop-btn1')) {
-  var myDropdown1 = document.getElementById("myDropdown1");
-    if (myDropdown1.classList.contains('show')) {
-      myDropdown1.classList.remove('show');
-    }
+  if (!e.target.closest('.dropdown')) {
+    document.getElementById("featureDropdown").classList.remove("show");
+    document.getElementById("companyDropdown").classList.remove("show");
   }
 }
