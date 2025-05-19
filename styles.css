@@ -42,14 +42,21 @@ body {
   color: hsl(0, 0%, 41%);
 }
 
+.navbar ul:hover {
+  color: hsl(0, 0%, 8%);
+}
+
 .dropdown {
   float: left;
   overflow: hidden;
 }
 
 .dropdown .drop-btn {
-  cursor: pointer;
   padding: 14px 16px;
+}
+
+.dropdown .drop-btn:hover, .dropdown .drop-btn:focus {
+  color: hsl(0, 0%, 8%);
 }
 
 .dropdown-content {
